@@ -12,6 +12,8 @@
 		761A130B226E1119006E3C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761A1309226E1119006E3C0B /* Main.storyboard */; };
 		761A130D226E111A006E3C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 761A130C226E111A006E3C0B /* Assets.xcassets */; };
 		761A1310226E111A006E3C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761A130E226E111A006E3C0B /* LaunchScreen.storyboard */; };
+		761A131B226E14CC006E3C0B /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761A131A226E14CC006E3C0B /* ThemeManager.swift */; };
+		761A131D226E17CB006E3C0B /* NewsHeadlinesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761A131C226E17CB006E3C0B /* NewsHeadlinesTableVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		761A130C226E111A006E3C0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		761A130F226E111A006E3C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		761A1311226E111A006E3C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		761A131A226E14CC006E3C0B /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		761A131C226E17CB006E3C0B /* NewsHeadlinesTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeadlinesTableVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +42,7 @@
 		761A12F9226E1118006E3C0B = {
 			isa = PBXGroup;
 			children = (
-				761A1304226E1119006E3C0B /* thewallnews */,
+				761A1304226E1119006E3C0B /* TheWallNews */,
 				761A1303226E1119006E3C0B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,9 +55,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		761A1304226E1119006E3C0B /* thewallnews */ = {
+		761A1304226E1119006E3C0B /* TheWallNews */ = {
 			isa = PBXGroup;
 			children = (
+				761A1317226E1486006E3C0B /* Managers */,
+				761A1319226E14A9006E3C0B /* Controllers */,
 				761A1305226E1119006E3C0B /* AppDelegate.swift */,
 				761A1307226E1119006E3C0B /* ViewController.swift */,
 				761A1309226E1119006E3C0B /* Main.storyboard */,
@@ -61,7 +67,23 @@
 				761A130E226E111A006E3C0B /* LaunchScreen.storyboard */,
 				761A1311226E111A006E3C0B /* Info.plist */,
 			);
-			path = thewallnews;
+			path = TheWallNews;
+			sourceTree = "<group>";
+		};
+		761A1317226E1486006E3C0B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				761A131A226E14CC006E3C0B /* ThemeManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		761A1319226E14A9006E3C0B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				761A131C226E17CB006E3C0B /* NewsHeadlinesTableVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 761A12FD226E1119006E3C0B /* Build configuration list for PBXProject "thewallnews" */;
+			buildConfigurationList = 761A12FD226E1119006E3C0B /* Build configuration list for PBXProject "TheWallNews" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				761A131D226E17CB006E3C0B /* NewsHeadlinesTableVC.swift in Sources */,
 				761A1308226E1119006E3C0B /* ViewController.swift in Sources */,
 				761A1306226E1119006E3C0B /* AppDelegate.swift in Sources */,
+				761A131B226E14CC006E3C0B /* ThemeManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		761A12FD226E1119006E3C0B /* Build configuration list for PBXProject "thewallnews" */ = {
+		761A12FD226E1119006E3C0B /* Build configuration list for PBXProject "TheWallNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				761A1312226E111A006E3C0B /* Debug */,

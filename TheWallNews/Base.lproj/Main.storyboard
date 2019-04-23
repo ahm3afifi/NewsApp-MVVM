@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="suq-9z-n4U" customClass="NewsHeadlineTableViewCell" customModule="thewallnews" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsHeadlineTableViewCell" rowHeight="80" id="suq-9z-n4U" customClass="NewsHeadlineTableViewCell" customModule="thewallnews" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="suq-9z-n4U" id="gBY-Nh-qwY">
@@ -42,7 +42,7 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ydc-Ft-h9L">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-16x9_1532051234409_12382778_ver1.0_320_180.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydc-Ft-h9L">
                                             <rect key="frame" x="344" y="11" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="4g0-E4-igi"/>
@@ -59,6 +59,11 @@
                                         <constraint firstAttribute="bottomMargin" secondItem="T0u-bt-0go" secondAttribute="bottom" id="t3o-e2-h72"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="6gV-3n-l7r" id="kdV-vY-i8E"/>
+                                    <outlet property="headlineImageView" destination="ydc-Ft-h9L" id="hVF-Ce-TEc"/>
+                                    <outlet property="titleLabel" destination="sff-Kv-Dsw" id="jaN-gf-zna"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -91,4 +96,7 @@
             <point key="canvasLocation" x="82.608695652173921" y="62.946428571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="placeholder-16x9_1532051234409_12382778_ver1.0_320_180.png" width="320" height="180"/>
+    </resources>
 </document>

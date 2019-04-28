@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--THEWALLNEWS-->
+        <!--SQUARE NEWS-->
         <scene sceneID="n2U-ug-4iL">
             <objects>
                 <tableViewController id="KD3-lh-sSj" customClass="NewsHeadlinesTableVC" customModule="thewallnews" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                             <outlet property="delegate" destination="KD3-lh-sSj" id="qYG-Mh-h9m"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="THEWALLNEWS" id="f1h-Jr-KYZ"/>
+                    <navigationItem key="navigationItem" title="SQUARE NEWS" id="f1h-Jr-KYZ"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIb-li-vbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

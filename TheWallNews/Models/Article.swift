@@ -9,7 +9,7 @@
 import Foundation
 
 
-struct NewSourceResponse: Decodable {
+struct NewsSourcesResponse: Decodable {
     let articles: [Article]
 }
 
@@ -26,4 +26,16 @@ struct Article: Decodable {
         case url
         case imageURL = "urlToImage"
     }
+}
+
+extension Article {
+    
+    static func by(_ category: String) -> Resource<[Article]> {
+        
+        return Resource<[Article]>(url: URL.urlForTopHeadlines(for: category)) { data in
+            return try! JSONDecoder().decode(NewsSourcesResponse.self, from: data).articles
+        }
+        
+    }
+    
 }

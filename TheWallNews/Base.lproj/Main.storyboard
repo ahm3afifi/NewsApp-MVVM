@@ -12,7 +12,7 @@
         <!--SQUARE NEWS-->
         <scene sceneID="n2U-ug-4iL">
             <objects>
-                <tableViewController id="KD3-lh-sSj" customClass="NewsHeadlinesTableVC" customModule="thewallnews" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="KD3-lh-sSj" customClass="NewsHeadlinesTableViewController" customModule="thewallnews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xDM-3w-NVQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

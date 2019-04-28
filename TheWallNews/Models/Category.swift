@@ -15,7 +15,7 @@ struct Category {
     let articles: [Article]
     
     // this function will return the string array with the titles for the categories
-    static func allCategories() -> [String] {
+    static func all() -> [String] {
         return ["Business","Entertainment","General","Sports"]
     }
     

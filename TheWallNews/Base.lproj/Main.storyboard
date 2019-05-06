@@ -42,7 +42,7 @@
                                                 </label>
                                             </subviews>
                                         </stackView>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder-16x9_1532051234409_12382778_ver1.0_320_180.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydc-Ft-h9L">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydc-Ft-h9L">
                                             <rect key="frame" x="344" y="11" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="4g0-E4-igi"/>
@@ -97,6 +97,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="placeholder-16x9_1532051234409_12382778_ver1.0_320_180.png" width="320" height="180"/>
+        <image name="placeholder.png" width="105" height="106"/>
     </resources>
 </document>

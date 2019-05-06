@@ -21,7 +21,7 @@ extension CategoryListViewModel {
     }
     
     func numberOfRowsInSections(_ section: Int) -> Int {
-        return self.categories.count
+        return self.categories[section].articles.count
     }
     
     func heightForHeaderInSection(_ section: Int) -> CGFloat {
@@ -35,6 +35,10 @@ extension CategoryListViewModel {
     
     func categoryAtIndex(index: Int) -> CategoryViewModel {
         return CategoryViewModel(name: categories[index].title, articles: categories[index].articles)
+    }
+    
+    func articleForSectionAtIndex(section: Int, index: Int) -> ArticleViewModel {
+        return categoryAtIndex(index: section).articleAtIndex(index)
     }
     
 }

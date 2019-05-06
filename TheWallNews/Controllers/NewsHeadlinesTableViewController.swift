@@ -35,6 +35,17 @@ class NewsHeadlinesTableViewController: UITableViewController {
         }
 }
     
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return self.categoryListVM.heightForHeaderInSection(section)
+    }
+    
+    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let name = self.categoryListVM.categoryAtIndex(index: section).name
+        return UIView.viewForSectionHeader(title: name)
+        
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return self.categoryListVM == nil ? 0 : self.categoryListVM.numberOfSections
     }

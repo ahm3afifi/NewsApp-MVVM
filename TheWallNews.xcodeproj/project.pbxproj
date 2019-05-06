@@ -26,6 +26,7 @@
 		76B3F4E022774D9D009F7931 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76B3F4DF22774D9D009F7931 /* UIImage+Extensions.swift */; };
 		76FA35B8228083C20027D36A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FA35B7228083C20027D36A /* UIView+Extensions.swift */; };
 		76FA35BA228083D00027D36A /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FA35B9228083D00027D36A /* Date+Extensions.swift */; };
+		76FA35BC228090C10027D36A /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FA35BB228090C10027D36A /* UIFont+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		76B3F4DF22774D9D009F7931 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		76FA35B7228083C20027D36A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		76FA35B9228083D00027D36A /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		76FA35BB228090C10027D36A /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				76B3F4DF22774D9D009F7931 /* UIImage+Extensions.swift */,
 				76FA35B7228083C20027D36A /* UIView+Extensions.swift */,
 				76FA35B9228083D00027D36A /* Date+Extensions.swift */,
+				76FA35BB228090C10027D36A /* UIFont+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			files = (
 				76FA35B8228083C20027D36A /* UIView+Extensions.swift in Sources */,
 				761A131D226E17CB006E3C0B /* NewsHeadlinesTableViewController.swift in Sources */,
+				76FA35BC228090C10027D36A /* UIFont+Extensions.swift in Sources */,
 				761A1320226E1EE0006E3C0B /* NewsHeadlineTableViewCell.swift in Sources */,
 				766F66A12274882E00452AE5 /* Webservice.swift in Sources */,
 				765D6889227663370050D5E8 /* CategoryService.swift in Sources */,

@@ -6,36 +6,37 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--SQUARE NEWS-->
         <scene sceneID="n2U-ug-4iL">
             <objects>
-                <tableViewController id="KD3-lh-sSj" customClass="NewsHeadlinesTableViewController" customModule="thewallnews" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="KD3-lh-sSj" customClass="NewsHeadlinesTableViewController" customModule="squarenews" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xDM-3w-NVQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsHeadlineTableViewCell" rowHeight="80" id="suq-9z-n4U" customClass="NewsHeadlineTableViewCell" customModule="thewallnews" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="NewsHeadlineTableViewCell" rowHeight="80" id="suq-9z-n4U" customClass="NewsHeadlineTableViewCell" customModule="squarenews" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="suq-9z-n4U" id="gBY-Nh-qwY">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="79.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="79.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="T0u-bt-0go">
-                                            <rect key="frame" x="20" y="11" width="324" height="58"/>
+                                            <rect key="frame" x="20" y="11" width="298" height="58"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sff-Kv-Dsw">
-                                                    <rect key="frame" x="0.0" y="0.0" width="324" height="33"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="298" height="33"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6gV-3n-l7r">
-                                                    <rect key="frame" x="0.0" y="41" width="324" height="17"/>
+                                                    <rect key="frame" x="0.0" y="41" width="298" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -43,7 +44,7 @@
                                             </subviews>
                                         </stackView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="ydc-Ft-h9L">
-                                            <rect key="frame" x="344" y="11" width="50" height="50"/>
+                                            <rect key="frame" x="318" y="11" width="50" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="4g0-E4-igi"/>
                                                 <constraint firstAttribute="width" constant="50" id="cfC-7E-hkv"/>
@@ -63,6 +64,7 @@
                                     <outlet property="descriptionLabel" destination="6gV-3n-l7r" id="kdV-vY-i8E"/>
                                     <outlet property="headlineImageView" destination="ydc-Ft-h9L" id="hVF-Ce-TEc"/>
                                     <outlet property="titleLabel" destination="sff-Kv-Dsw" id="jaN-gf-zna"/>
+                                    <segue destination="jk5-FZ-RWF" kind="show" identifier="SafariVC" id="M7Z-zN-kmT"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -76,6 +78,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tIb-li-vbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="992.75362318840587" y="62.946428571428569"/>
+        </scene>
+        <!--SafariVC-->
+        <scene sceneID="hHz-jE-IaT">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O9C-64-2jE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="jk5-FZ-RWF" customClass="SafariVC" customModule="squarenews" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Ve-5e-6Bx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xii-U5-d3x">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dTL-Ht-JIy" firstAttribute="bottom" secondItem="xii-U5-d3x" secondAttribute="bottom" id="7VR-Ng-zGt"/>
+                            <constraint firstItem="dTL-Ht-JIy" firstAttribute="trailing" secondItem="xii-U5-d3x" secondAttribute="trailing" id="Z16-iJ-l8n"/>
+                            <constraint firstItem="xii-U5-d3x" firstAttribute="leading" secondItem="dTL-Ht-JIy" secondAttribute="leading" id="gvO-Yf-EfQ"/>
+                            <constraint firstItem="xii-U5-d3x" firstAttribute="top" secondItem="dTL-Ht-JIy" secondAttribute="top" id="yIM-A2-YC6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dTL-Ht-JIy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LAE-uE-I7B"/>
+                    <connections>
+                        <outlet property="webview" destination="xii-U5-d3x" id="cEj-Ov-uzx"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1941" y="63"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qoz-AD-aPy">

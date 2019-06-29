@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import SafariServices
 
 class NewsHeadlinesTableViewController: UITableViewController {
     
@@ -18,12 +19,12 @@ class NewsHeadlinesTableViewController: UITableViewController {
         super.viewDidLoad()
         setupUI()
         populateHeadlinesAndArticles()
+        
     }
     
     private func setupUI() {
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        
         self.tableView.tableHeaderView = UIView.viewForTableViewHeader(subtitle: Date.dateAsStringForTableViewHeader())
     }
     
@@ -34,6 +35,28 @@ class NewsHeadlinesTableViewController: UITableViewController {
             self?.tableView.reloadData()
         }
 }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SafariVC" {
+            prepareSegueForNewsDetails(segue)
+        }
+    }
+    
+    private func prepareSegueForNewsDetails(_ segue: UIStoryboardSegue) {
+        guard let newsDetailsVC = segue.destination as? SafariVC else {
+            fatalError("NewsDetailsViewController is not defined")
+        }
+        
+        guard let indexPath = tableView.indexPathForSelectedRow else {
+            fatalError("Unable to get the selected row")
+        }
+        
+        
+        let articleVM = self.categoryListVM.categoryAtIndex(index: indexPath.section).articleAtIndex(indexPath.row)
+        
+        newsDetailsVC.article = articleVM.article
+    }
+    
     
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return self.categoryListVM.heightForHeaderInSection(section)
@@ -68,7 +91,6 @@ class NewsHeadlinesTableViewController: UITableViewController {
         
     }
     
-   
-
-
+    
+    
 }

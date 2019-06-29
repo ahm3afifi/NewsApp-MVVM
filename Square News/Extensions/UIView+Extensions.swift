@@ -31,7 +31,7 @@ extension UIView {
     static func viewForSectionHeader(title: String) -> UIView {
         
         let screenRect = UIScreen.main.bounds
-        let headerView = UIView(frame: CGRect(x: 15, y: 0, width: screenRect.width, height: 60))
+        let headerView = UIView(frame: CGRect(x: 15, y: 0, width: screenRect.width, height: 40))
         
         headerView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         

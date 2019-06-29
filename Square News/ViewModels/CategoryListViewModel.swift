@@ -25,7 +25,7 @@ extension CategoryListViewModel {
     }
     
     func heightForHeaderInSection(_ section: Int) -> CGFloat {
-        return 60.0
+        return 40
     }
     
 }

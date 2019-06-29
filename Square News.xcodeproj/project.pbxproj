@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7603A35A227870BE005AFDCD /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 7603A359227870BE005AFDCD /* placeholder.png */; };
+		7606490E229F31940066F3DD /* SafariVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7606490D229F31940066F3DD /* SafariVC.swift */; };
+		76064910229F3B340066F3DD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7606490F229F3B340066F3DD /* WebKit.framework */; };
+		76064916229F53160066F3DD /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76064915229F53160066F3DD /* NewsDetailsViewController.swift */; };
 		761A1306226E1119006E3C0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761A1305226E1119006E3C0B /* AppDelegate.swift */; };
 		761A1308226E1119006E3C0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761A1307226E1119006E3C0B /* ViewController.swift */; };
 		761A130B226E1119006E3C0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 761A1309226E1119006E3C0B /* Main.storyboard */; };
@@ -16,6 +19,7 @@
 		761A131B226E14CC006E3C0B /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761A131A226E14CC006E3C0B /* ThemeManager.swift */; };
 		761A131D226E17CB006E3C0B /* NewsHeadlinesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761A131C226E17CB006E3C0B /* NewsHeadlinesTableViewController.swift */; };
 		761A1320226E1EE0006E3C0B /* NewsHeadlineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761A131F226E1EE0006E3C0B /* NewsHeadlineTableViewCell.swift */; };
+		7646BE422281BA4600D61260 /* NewsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7646BE412281BA4600D61260 /* NewsDetailsViewModel.swift */; };
 		765D6885227655E30050D5E8 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D6884227655E30050D5E8 /* Category.swift */; };
 		765D6887227656730050D5E8 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D6886227656730050D5E8 /* Article.swift */; };
 		765D6889227663370050D5E8 /* CategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765D6888227663370050D5E8 /* CategoryService.swift */; };
@@ -31,7 +35,10 @@
 
 /* Begin PBXFileReference section */
 		7603A359227870BE005AFDCD /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
-		761A1302226E1119006E3C0B /* thewallnews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = thewallnews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7606490D229F31940066F3DD /* SafariVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariVC.swift; sourceTree = "<group>"; };
+		7606490F229F3B340066F3DD /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		76064915229F53160066F3DD /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewsDetailsViewController.swift; path = ../../../../Desktop/NewsDetailsViewController.swift; sourceTree = "<group>"; };
+		761A1302226E1119006E3C0B /* squarenews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = squarenews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		761A1305226E1119006E3C0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		761A1307226E1119006E3C0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		761A130A226E1119006E3C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -41,6 +48,7 @@
 		761A131A226E14CC006E3C0B /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		761A131C226E17CB006E3C0B /* NewsHeadlinesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeadlinesTableViewController.swift; sourceTree = "<group>"; };
 		761A131F226E1EE0006E3C0B /* NewsHeadlineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHeadlineTableViewCell.swift; sourceTree = "<group>"; };
+		7646BE412281BA4600D61260 /* NewsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewModel.swift; sourceTree = "<group>"; };
 		765D6884227655E30050D5E8 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		765D6886227656730050D5E8 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		765D6888227663370050D5E8 /* CategoryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryService.swift; sourceTree = "<group>"; };
@@ -59,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76064910229F3B340066F3DD /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,29 +77,30 @@
 		761A12F9226E1118006E3C0B = {
 			isa = PBXGroup;
 			children = (
-				761A1304226E1119006E3C0B /* TheWallNews */,
+				761A1304226E1119006E3C0B /* Square News */,
 				761A1303226E1119006E3C0B /* Products */,
+				7663466C229D7FCD00E59B70 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		761A1303226E1119006E3C0B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				761A1302226E1119006E3C0B /* thewallnews.app */,
+				761A1302226E1119006E3C0B /* squarenews.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		761A1304226E1119006E3C0B /* TheWallNews */ = {
+		761A1304226E1119006E3C0B /* Square News */ = {
 			isa = PBXGroup;
 			children = (
+				761A1317226E1486006E3C0B /* Managers */,
 				76B3F4DA227748CF009F7931 /* ViewModels */,
 				765D688A227665250050D5E8 /* Extensions */,
 				765D6883227655D10050D5E8 /* Models */,
 				766F669F2274880A00452AE5 /* Services */,
 				761A1321226E91E2006E3C0B /* Images */,
 				761A131E226E1E67006E3C0B /* Cells */,
-				761A1317226E1486006E3C0B /* Managers */,
 				761A1319226E14A9006E3C0B /* Controllers */,
 				761A1305226E1119006E3C0B /* AppDelegate.swift */,
 				761A1307226E1119006E3C0B /* ViewController.swift */,
@@ -99,7 +109,7 @@
 				761A130E226E111A006E3C0B /* LaunchScreen.storyboard */,
 				761A1311226E111A006E3C0B /* Info.plist */,
 			);
-			path = TheWallNews;
+			path = "Square News";
 			sourceTree = "<group>";
 		};
 		761A1317226E1486006E3C0B /* Managers */ = {
@@ -114,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				761A131C226E17CB006E3C0B /* NewsHeadlinesTableViewController.swift */,
+				76064915229F53160066F3DD /* NewsDetailsViewController.swift */,
+				7606490D229F31940066F3DD /* SafariVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -155,6 +167,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7663466C229D7FCD00E59B70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7606490F229F3B340066F3DD /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		766F669F2274880A00452AE5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +189,7 @@
 			children = (
 				76B3F4DB227748F8009F7931 /* CategoryListViewModel.swift */,
 				76B3F4DD22774C70009F7931 /* ArticleViewModel.swift */,
+				7646BE412281BA4600D61260 /* NewsDetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -176,9 +197,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		761A1301226E1119006E3C0B /* thewallnews */ = {
+		761A1301226E1119006E3C0B /* squarenews */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 761A1314226E111A006E3C0B /* Build configuration list for PBXNativeTarget "thewallnews" */;
+			buildConfigurationList = 761A1314226E111A006E3C0B /* Build configuration list for PBXNativeTarget "squarenews" */;
 			buildPhases = (
 				761A12FE226E1119006E3C0B /* Sources */,
 				761A12FF226E1119006E3C0B /* Frameworks */,
@@ -188,9 +209,9 @@
 			);
 			dependencies = (
 			);
-			name = thewallnews;
+			name = squarenews;
 			productName = thewallnews;
-			productReference = 761A1302226E1119006E3C0B /* thewallnews.app */;
+			productReference = 761A1302226E1119006E3C0B /* squarenews.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 761A12FD226E1119006E3C0B /* Build configuration list for PBXProject "TheWallNews" */;
+			buildConfigurationList = 761A12FD226E1119006E3C0B /* Build configuration list for PBXProject "Square News" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,7 +242,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				761A1301226E1119006E3C0B /* thewallnews */,
+				761A1301226E1119006E3C0B /* squarenews */,
 			);
 		};
 /* End PBXProject section */
@@ -245,10 +266,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76064916229F53160066F3DD /* NewsDetailsViewController.swift in Sources */,
 				76FA35B8228083C20027D36A /* UIView+Extensions.swift in Sources */,
 				761A131D226E17CB006E3C0B /* NewsHeadlinesTableViewController.swift in Sources */,
+				7646BE422281BA4600D61260 /* NewsDetailsViewModel.swift in Sources */,
 				76FA35BC228090C10027D36A /* UIFont+Extensions.swift in Sources */,
 				761A1320226E1EE0006E3C0B /* NewsHeadlineTableViewCell.swift in Sources */,
+				7606490E229F31940066F3DD /* SafariVC.swift in Sources */,
 				766F66A12274882E00452AE5 /* Webservice.swift in Sources */,
 				765D6889227663370050D5E8 /* CategoryService.swift in Sources */,
 				761A1308226E1119006E3C0B /* ViewController.swift in Sources */,
@@ -406,9 +430,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68NL7XQ986;
-				INFOPLIST_FILE = thewallnews/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Square News/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -416,8 +441,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AhmedAfifi.thewallnews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -425,9 +451,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68NL7XQ986;
-				INFOPLIST_FILE = thewallnews/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Square News/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,15 +462,16 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.AhmedAfifi.thewallnews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		761A12FD226E1119006E3C0B /* Build configuration list for PBXProject "TheWallNews" */ = {
+		761A12FD226E1119006E3C0B /* Build configuration list for PBXProject "Square News" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				761A1312226E111A006E3C0B /* Debug */,
@@ -452,7 +480,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		761A1314226E111A006E3C0B /* Build configuration list for PBXNativeTarget "thewallnews" */ = {
+		761A1314226E111A006E3C0B /* Build configuration list for PBXNativeTarget "squarenews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				761A1315226E111A006E3C0B /* Debug */,

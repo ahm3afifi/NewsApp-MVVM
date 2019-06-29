@@ -16,7 +16,7 @@ struct Category {
     
     // this function will return the string array with the titles for the categories
     static func all() -> [String] {
-        return ["Business","Entertainment","General","Sports"]
+        return ["General","Business","Sports"]
     }
     
 }

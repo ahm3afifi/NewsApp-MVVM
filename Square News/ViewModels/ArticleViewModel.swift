@@ -9,9 +9,11 @@
 import Foundation
 import UIKit
 
+
 struct ArticleViewModel {
     private(set) var article: Article
 }
+
 
 extension ArticleViewModel {
     init(_ article: Article) {

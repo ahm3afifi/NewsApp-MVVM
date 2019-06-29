@@ -17,6 +17,7 @@ class NewsHeadlineTableViewCell: UITableViewCell {
     
 }
 
+
 extension NewsHeadlineTableViewCell {
     
     func configure(vm: ArticleViewModel) {

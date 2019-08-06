@@ -12,7 +12,7 @@ import SafariServices
 import WebKit
 
 
-class SafariVC: UIViewController {
+class SafariViewController: UIViewController {
     
     var article: Article!
     @IBOutlet weak var webview: WKWebView!

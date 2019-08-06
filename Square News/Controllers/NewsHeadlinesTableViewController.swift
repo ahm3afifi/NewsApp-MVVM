@@ -12,7 +12,8 @@ import SafariServices
 
 class NewsHeadlinesTableViewController: UITableViewController {
     
-    
+    var article: Article!
+    private var newsDetailsInSafariVM: NewsDetailsViewModel!
     private var categoryListVM: CategoryListViewModel!
     
     override func viewDidLoad() {
@@ -37,20 +38,21 @@ class NewsHeadlinesTableViewController: UITableViewController {
 }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SafariVC" {
+        
+        if segue.identifier == "NewsDetailsViewController" {
             prepareSegueForNewsDetails(segue)
         }
     }
     
     private func prepareSegueForNewsDetails(_ segue: UIStoryboardSegue) {
-        guard let newsDetailsVC = segue.destination as? SafariVC else {
+        
+        guard let newsDetailsVC = segue.destination as? NewsDetailsViewController else {
             fatalError("NewsDetailsViewController is not defined")
         }
         
         guard let indexPath = tableView.indexPathForSelectedRow else {
             fatalError("Unable to get the selected row")
         }
-        
         
         let articleVM = self.categoryListVM.categoryAtIndex(index: indexPath.section).articleAtIndex(indexPath.row)
         

@@ -6,3 +6,10 @@ It's a news viewer app created with **MVVM** design pattern. It's displaying art
 
 <img width = "300" src = "https://user-images.githubusercontent.com/30387348/72662308-1893bb00-39ff-11ea-915c-835340a20ec5.png" /> <img width = "300" src = "https://user-images.githubusercontent.com/30387348/72662309-19c4e800-39ff-11ea-8dc9-391655755ed2.png" /> 
 
+# Frameworks Used
+
+1. [Foundation](https://developer.apple.com/documentation/foundation)
+2. [UIKit](https://developer.apple.com/documentation/uikit)
+
+
+

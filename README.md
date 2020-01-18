@@ -10,6 +10,7 @@ It's a news viewer app created with **MVVM** design pattern. It's displaying art
 
 1. [Foundation](https://developer.apple.com/documentation/foundation)
 2. [UIKit](https://developer.apple.com/documentation/uikit)
+3. [CoreData](https://developer.apple.com/documentation/coredata)
 
 
 

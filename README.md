@@ -13,4 +13,8 @@ It's a news viewer app created with **MVVM** design pattern. It's displaying art
 3. [CoreData](https://developer.apple.com/documentation/coredata)
 
 
+# How to Build
 
+1. Download zip or fork & clone project on your desktop.
+2. Open `Square News.xcodeproj` file in Xcode.
+3. Now you can build and run the app.
